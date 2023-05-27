@@ -93,11 +93,16 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 
-					<div class="navbar-header">
+					<div class="row navbar-header">
+						<div class="col-md-6 text-left">
 						<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
 							<i class="glyphicon glyphicon-align-left"></i>
 							<span>Toggle Sidebar</span>
 						</button>
+					</div>
+						<div class="col-md-6 text-right">
+							<button class="btn btn-warning" onclick="printDiv('printableArea')" value="print a div!">Export to Pdf</button>
+						</div>
 					</div>
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -113,7 +118,7 @@
 
 
 			<div class="container">
-				<div class="card text-center">
+				<div class="card text-center" id="printableArea">
 					<!-- Header -->
 					<div class="card-header myCardHeader">
 						<div class="row">
@@ -123,7 +128,7 @@
 							<div class="col-md-6 text-right">
 								<button class="btn btn-primary" id="btnThem" data-toggle="modal"
 									data-target="#myModal">Thêm nhân viên</button>
-							</div>
+							</div>	
 						</div>
 					</div>
 
@@ -134,7 +139,7 @@
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="Loại nhân viên" id="searchName">
 									<div class="input-group-prepend">
-										<span class="input-group-text" id="btnTimNV"><i class="fa fa-search"></i></span>
+										<button class="input-group-text" id="btnTimNV"><i class="fa fa-search"></i></button>
 									</div>
 								</div>
 							</div>

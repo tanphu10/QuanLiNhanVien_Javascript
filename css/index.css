@@ -5,3 +5,15 @@ header, section, footer, aside, nav, main, article, figure {
 img{
 	max-width: 100%;
 }
+
+/* @media print {
+	body {
+	  visibility: hidden;
+	}
+	#section-to-print {
+	  visibility: visible;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	}
+  } */
