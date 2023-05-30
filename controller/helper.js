@@ -22,7 +22,9 @@ function layGiaTriInput() {
   valid=checkAccount(_taiKhoan,"tbTKNV");
   valid=checkName(_hoTen,"tbTen");
   valid=checkPassWord(_matKhau,"tbMatKhau");
-
+  valid=checkIncome(_luongCoBan, "tbLuongCB");
+  valid=checkPosition(_chucVu, "tbChucVu");
+  valid= checkTime(_gioLamTrongThang, "tbGiolam") ;
   if(!valid) {
     return; 
   }

@@ -55,3 +55,36 @@ function checkPassWord(checkInput,idThongBao){
         document.getElementById(idThongBao).innerHTML="please you must input password 6-10 charecters( include at least 1 number , 1 uppercase , 1 special charecters"
     }
 }
+
+
+function checkIncome(checkInput,idThongBao){
+    if(checkInput>=1000000&& checkInput<=20000000){
+        document.getElementById(idThongBao).innerHTML="";
+        return true;
+    }else{
+        document.getElementById(idThongBao).innerHTML="please Input income basic from 1 milion VND to 20 milion VND";
+        return false;
+    }
+}
+
+
+
+function checkPosition(checkInput,idThongBao){
+    if(checkInput=="Giám đốc"||checkInput=="Trưởng Phòng"|| checkInput=="Nhân Viên"){
+        document.getElementById(idThongBao).innerHTML="";
+        return true;
+    }else{
+        document.getElementById(idThongBao).innerHTML="please you only choose 3 option under";
+        return false;
+    }
+}
+
+function checkTime(checkInput,idThongBao){
+    if(checkInput>=80&& checkInput<=200){
+        document.getElementById(idThongBao).innerHTML="";
+        return true;
+    }else{
+        document.getElementById(idThongBao).innerHTML="please Input income from 80 to 200 ";
+        return false;
+    }
+}
