@@ -25,6 +25,8 @@ function layGiaTriInput() {
   valid=checkIncome(_luongCoBan, "tbLuongCB");
   valid=checkPosition(_chucVu, "tbChucVu");
   valid= checkTime(_gioLamTrongThang, "tbGiolam") ;
+  valid= checkDateTime(_ngayLam, "tbNgay") ;
+
   if(!valid) {
     return; 
   }

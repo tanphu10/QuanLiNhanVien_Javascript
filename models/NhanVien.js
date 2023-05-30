@@ -24,7 +24,7 @@ function NhanVien(
     var chucDanh = this.chucvu;
 
     switch (chucDanh) {
-      case "Giám đốc":
+      case "Giám Đốc":
         {
           return 3 * this.luongCoBan;
         }

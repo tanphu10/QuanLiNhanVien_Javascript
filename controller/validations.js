@@ -70,7 +70,7 @@ function checkIncome(checkInput,idThongBao){
 
 
 function checkPosition(checkInput,idThongBao){
-    if(checkInput=="Giám đốc"||checkInput=="Trưởng Phòng"|| checkInput=="Nhân Viên"){
+    if(checkInput=="Giám Đốc"||checkInput=="Trưởng Phòng"|| checkInput=="Nhân Viên"){
         document.getElementById(idThongBao).innerHTML="";
         return true;
     }else{
@@ -85,6 +85,18 @@ function checkTime(checkInput,idThongBao){
         return true;
     }else{
         document.getElementById(idThongBao).innerHTML="please Input income from 80 to 200 ";
+        return false;
+    }
+}
+
+
+function checkDateTime(checkInput,idThongBao){
+    var regexTime=/^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
+    if(regexTime.test(checkInput)){
+        document.getElementById(idThongBao).innerHTML="";
+        return true;
+    }else{
+        document.getElementById(idThongBao).innerHTML="please Input exactly dd/mm/yy ";
         return false;
     }
 }
