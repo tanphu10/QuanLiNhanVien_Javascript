@@ -117,6 +117,15 @@ document.getElementById("btnTimNV").onclick = function () {
       console.log('first')
     }
   }
+// cách 2 
+// var employee =new NhanVien(`${layGiaTriInput()}`);
+// for(var employee of arr){
+//   if(employee.xepLoai()==loaiNhanVien){
+//     arrXepLoai.push(employee);
+//   } else if(loaiNhanVien=""){
+//     renderGiaoDien()
+//   }
+// }
   // console.log(arrXepLoai)
       renderGiaoDien(arrXepLoai);
 };

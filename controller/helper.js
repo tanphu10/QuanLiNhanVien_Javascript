@@ -18,8 +18,13 @@ function layGiaTriInput() {
     kiemTraRong(_luongCoBan, "tbLuongCB") &
     kiemTraRong(_chucVu, "tbChucVu") &
     kiemTraRong(_gioLamTrongThang, "tbGiolam");
+  valid=checkEmail(_email,"tbEmail");
+  valid=checkAccount(_taiKhoan,"tbTKNV");
+  valid=checkName(_hoTen,"tbTen");
+  valid=checkPassWord(_matKhau,"tbMatKhau");
+
   if(!valid) {
-    return;
+    return; 
   }
 
   var nhanVienUuTu = new NhanVien(
